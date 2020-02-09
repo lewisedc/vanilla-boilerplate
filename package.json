@@ -1,17 +1,17 @@
 {
   "name": "project-name-here",
   "scripts": {
-    "start": "concurrently \"parcel watch src/index.html\" \"ws -d dist\"",
-    "build": "parcel build src/index.html",
-    "clean": "rmdir /s /q dist && rmdir /s /q .cache"
+    "start": "concurrently \"parcel watch src/*.html\" \"ws -d dist\"",
+    "build": "parcel build src/*.html",
+    "clean": "rm -rf dist && rm -rf .cache"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
-    "concurrently": "^4.1.1",
-    "local-web-server": "^3.0.3",
+    "autoprefixer": "^9.7.4",
+    "concurrently": "^4.1.2",
+    "local-web-server": "^3.0.7",
     "normalize.css": "^8.0.1",
-    "parcel-bundler": "^1.12.3",
-    "sass": "^1.22.0"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
   },
   "browserslist": [
     "defaults"
